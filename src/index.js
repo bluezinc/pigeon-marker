@@ -116,7 +116,6 @@ class Marker extends React.Component {
   };
 
   handleMouseOut = event => {
-    console.log('on mouse out dude');
     this.props.onMouseOut && this.props.onMouseOut(this.eventParameters(event));
     this.setState({ hover: false });
   };
