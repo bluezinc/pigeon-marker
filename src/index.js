@@ -12,7 +12,7 @@ const imageOffset = {
 }
 
 export default class Marker extends Component {
-  static propTypes = process.env.BABEL_ENV === 'inferno' ? {} : {
+  static propTypes = {
     // input, passed to events
     anchor: PropTypes.array.isRequired,
     payload: PropTypes.any,
